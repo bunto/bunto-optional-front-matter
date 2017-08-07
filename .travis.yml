@@ -1,0 +1,10 @@
+rvm:
+  - 2.4
+before_install:
+  - gem install bundler
+  - chmod a+x script/bootstrap
+  - chmod a+x script/cibuild
+language: ruby
+script: script/cibuild
+sudo: false
+cache: bundler
